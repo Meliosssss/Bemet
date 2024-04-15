@@ -4,7 +4,7 @@
 <form action="" method="POST" class="form-inline" role="form">
     <div class="form-group">
         <label class="sr-only" for="">label</label>
-        <input type="email" class="form-control" id="" placeholder="Input field">
+        <input type="" class="form-control" id="" placeholder="Input field">
     </div>
     <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
     <a href="{{ route('product.create') }}" class="btn btn-primary pull-right"><i class="fa fa-plus"></i></a>
@@ -37,10 +37,8 @@
                 <form action="{{ route('product.destroy', $model->id) }}" method="post">
                     @csrf
                     @method('DELETE')
-                    <a href="{{ route('product.edit', $model->id) }}" class=" btn btn-primary"><i
-                            class="fa fa-edit"></i></a>
-                    <button class="btn btn-danger" onclick="return confirm('Are you sure want to delete it?')"><i
-                            class="fa fa-trash"></i></button>
+                    <a href="{{ route('product.edit', $model->id) }}" class=" btn btn-primary"><i class="fa fa-edit"></i></a>
+                    <button class="btn btn-danger" onclick="return confirm('Are you sure want to delete it?')"><i class="fa fa-trash"></i></button>
                 </form>
             </td>
         </tr>
