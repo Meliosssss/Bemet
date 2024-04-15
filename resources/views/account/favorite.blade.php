@@ -1,5 +1,5 @@
 @extends('master.main')
-
+@section('title' , 'Favorite')
 @section('main')
 <main>
     <!-- breadcrumb-area -->

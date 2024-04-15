@@ -1,5 +1,5 @@
 @extends('master.main')
-
+@section('title' , 'Cart')
 @section('main')
 <main>
     <!-- breadcrumb-area -->
@@ -45,16 +45,13 @@
                             </td>
                             <td>
                                 <form action="{{ route('cart.update', $item->product_id) }}" method="get">
-                                    <input type="number" value="{{ $item->quantity }}" name="quantity"
-                                        style="width: 60px; text-align:center">
+                                    <input type="number" value="{{ $item->quantity }}" name="quantity" style="width: 60px; text-align:center">
                                     <button><i class="fa fa-save"></i></button>
                                 </form>
                             </td>
                             <td>{{ $item->price }}</td>
                             <td>
-                                <a onclick="return confirm('Are you sure want to delete it?')"
-                                    href="{{ route('cart.delete', $item->product_id) }}"><i
-                                        class="fas fa-trash"></i></a>
+                                <a onclick="return confirm('Are you sure want to delete it?')" href="{{ route('cart.delete', $item->product_id) }}"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>
                         @endforeach

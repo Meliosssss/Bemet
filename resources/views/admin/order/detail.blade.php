@@ -1,5 +1,5 @@
 @extends('master.admin')
-
+@section('title' , 'Details Order')
 @section('main')
 <div class="container">
     <h3>Information</h3>

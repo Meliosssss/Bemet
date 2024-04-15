@@ -1,5 +1,5 @@
 @extends('master.main')
-
+@section('title' , 'Oder History')
 @section('main')
 <main>
     <!-- breadcrumb-area -->

@@ -1,5 +1,5 @@
 @extends('master.main')
-
+@section('title' , 'Forget Password')
 @section('main')
 <main>
     <!-- breadcrumb-area -->
@@ -24,56 +24,6 @@
 
     <!-- contact-area -->
     <section class="contact-area">
-        <div class="contact-info-wrap contact-info-bg" data-background="uploads/bg/contact_info_bg.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="contact-info-item">
-                            <div class="icon">
-                                <i class="flaticon-call"></i>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Phone</h4>
-                                <span>+0 333 999 8899</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="contact-info-item">
-                            <div class="icon">
-                                <i class="flaticon-email"></i>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Email</h4>
-                                <span>info@yourmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="contact-info-item">
-                            <div class="icon">
-                                <i class="flaticon-location"></i>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Address</h4>
-                                <span>W33 Park, New York</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="contact-info-item">
-                            <div class="icon">
-                                <i class="flaticon-location-1"></i>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">HeadOffice</h4>
-                                <span>W33 Park, New York</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="contact-wrap">
             <div class="container">
                 <div class="row align-items-center">
@@ -81,32 +31,24 @@
                         <div class="contact-content">
                             <div class="section-title mb-15">
                                 <span class="sub-title">Get New Password</span>
-                                <h2 class="title">Get in <span>Touch</span></h2>
-                            </div>
-                            <p>Meat provide well shaped fresh and the organic meat well <br> animals is Humans have
-                                hunted schistoric</p>
-                            <form action="" method="POST">
-                                @csrf
-                                <div class="contact-form-wrap">
-                                    <div class="form-grp">
-                                        <input name="email" type="email" placeholder="Your Email *" required>
-                                        @error('email')
-                                        <p class="text-danger">{{ $message }}</p>
-                                        @enderror
+                                <form action="" method="POST">
+                                    @csrf
+                                    <div class="contact-form-wrap">
+                                        <div class="form-grp">
+                                            <input name="email" type="email" placeholder="Your Email *" required>
+                                            @error('email')
+                                            <p class="text-danger">{{ $message }}</p>
+                                            @enderror
+                                        </div>
+                                        <button type="submit">Send Email</button>
                                     </div>
-                                    <button type="submit">Send Email</button>
-                                </div>
-                            </form>
-                            <p class="ajax-response mb-0"></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="contact-map">
+                                </form>
+                                <p class="ajax-response mb-0"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- contact-area-end -->
 

@@ -52,18 +52,7 @@
             <div class="container custom-container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-8">
-                        <div class="header-top-left">
-                            <ul class="list-wrap">
-                                <li class="header-location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    33M Sun Central. New York
-                                </li>
-                                <li>
-                                    <i class="fas fa-envelope"></i>
-                                    <a href="mailto:info@example.com">info@example.com</a>
-                                </li>
-                            </ul>
-                        </div>
+
                     </div>
                     <div class="col-lg-6 col-md-4">
                         <div class="header-top-right">
@@ -103,14 +92,14 @@
                             <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
                             <nav class="menu-nav">
                                 <div class="logo">
-                                    <a href="index-2.html"><img src="uploads/logo/logo.png" alt="Logo"></a>
+                                    <a href="#"><img src="uploads/logo/logo.png" alt="Logo"></a>
                                 </div>
                                 <div class="navbar-wrap main-menu d-none d-lg-flex">
                                     <ul class="navigation">
                                         <li class="menu-item-has-children"><a href="{{ route('home.index') }}">Home</a>
                                         </li>
-                                        <li class="menu-item-has-children"><a href="about.html">ABOUT US</a></li>
-                                        <li class="menu-item-has-children"><a href="#">PRODUCTS</a>
+                                        <li class="menu-item-has-children"><a href="#">ABOUT US</a></li>
+                                        <li class="menu-item-has-children"><a href="#">CATEGORY</a>
                                             <ul class="sub-menu">
                                                 @foreach ($cats_home as $cath)
                                                 <li><a href="{{ route('home.category', $cath->id) }}">{{ $cath->name }}</a>
@@ -131,21 +120,19 @@
                                                 <li><a href="team-details.html">Team Details</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="#">Contact</a></li>
                                     </ul>
                                 </div>
                                 <div class="header-action d-none d-md-block">
                                     <ul class="list-wrap">
-                                        <li class="header-search">
+                                        <!-- <li class="header-search">
                                             <a href="#"><i class="flaticon-search"></i></a>
-                                        </li>
+                                        </li> -->
                                         <li class="header-shop-cart">
                                             <a href="{{ route('cart.index') }}">
                                                 <i class="flaticon-shopping-basket"></i>
                                                 <span>{{ $carts->sum('quantity') }}</span>
                                             </a>
-                                        </li>
-                                        <li class="header-btn"><a href="tel:0123456789" class="btn">+1 333 555 999</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -218,7 +205,7 @@
                         <ul class="list-wrap">
                             <li class="order-0 order-lg-2">
                                 <div class="footer-logo">
-                                    <a href="index-2.html"><img src="uploads/logo/w_logo.png" alt=""></a>
+                                    <a href="#"><img src="uploads/logo/w_logo.png" alt=""></a>
                                 </div>
                             </li>
                             <li>
@@ -241,89 +228,6 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="footer-widget">
-                                <h4 class="fw-title">about andspa</h4>
-                                <div class="footer-contact">
-                                    <ul class="list-wrap">
-                                        <li>Centerl Park West La, New York</li>
-                                        <li><a href="tel:0123456789">+0 333 999 8899</a></li>
-                                        <li><a href="mailto:info@bemet.com">info@bemet.com</a></li>
-                                    </ul>
-                                </div>
-                                <div class="footer-content">
-                                    <h4 class="title">Open Hours</h4>
-                                    <p>Sunday to Friday <span>06:00-18:00</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="footer-widget">
-                                <h4 class="fw-title">Important Links</h4>
-                                <div class="footer-link">
-                                    <ul class="list-wrap">
-                                        <li><a href="contact.html">CURATION</a></li>
-                                        <li><a href="about.html">ABOUT US</a></li>
-                                        <li><a href="contact.html">MY ACCOUNT</a></li>
-                                        <li><a href="contact.html">CONTACT</a></li>
-                                        <li><a href="contact.html">SHIPPING & RETURNS</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6 col-sm-4">
-                            <div class="footer-widget">
-                                <h4 class="fw-title">CATEGORIES</h4>
-                                <div class="footer-link">
-                                    <ul class="list-wrap">
-                                        <li><a href="contact.html">How to Order</a></li>
-                                        <li><a href="contact.html">Delivery Info</a></li>
-                                        <li><a href="contact.html">FAQs</a></li>
-                                        <li><a href="contact.html">Terms</a></li>
-                                        <li><a href="contact.html">Privacy Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div class="footer-widget">
-                                <h4 class="fw-title">instagram</h4>
-                                <div class="footer-instagram">
-                                    <ul class="list-wrap">
-                                        <li><a href="#"><img src="uploads/images/footer_insta01.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="uploads/images/footer_insta02.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="uploads/images/footer_insta03.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="uploads/images/footer_insta04.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="uploads/images/footer_insta05.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="uploads/images/footer_insta06.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="uploads/images/footer_insta07.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="uploads/images/footer_insta08.jpg" alt=""></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-7">
-                            <div class="copyright-text">
-                                <p>© 2023 By <a href="index-2.html">Bemet</a>, All Rights Reserved</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-5">
-                            <div class="footer-card text-end">
-                                <img src="uploads/images/card.png" alt="">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

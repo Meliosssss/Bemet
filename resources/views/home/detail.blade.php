@@ -1,5 +1,5 @@
 @extends('master.main')
-
+@section('title' , 'Order details')
 @section('main')
 <main>
     <!-- breadcrumb-area -->
@@ -66,14 +66,6 @@
                         @endforeach
                     </tbody>
                 </table>
-                <br>
-                <div class="text-center">
-                    <a href="" class="btn btn-primary">Continue shopping</a>
-                    @if($carts->count())
-                    <a href="{{ route('cart.clear') }}" class="btn btn-danger"><i class="fa fa-trash"></i>Clear cart</a>
-                    <a href="{{ route('order.checkout') }}" class="btn btn-success">Check out</a>
-                    @endif
-                </div>
             </div>
         </div>
     </section>

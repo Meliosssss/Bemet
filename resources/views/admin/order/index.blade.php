@@ -1,5 +1,5 @@
 @extends('master.admin')
-
+@section('title' , 'Order List')
 @section('main')
 <table class="table">
     <thead>
